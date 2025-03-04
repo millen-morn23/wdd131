@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style Header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Style Navigation */
+nav {
+    background-color: rgb(98, 96, 96);
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+    .navigation li {
+        margin: 0 15px;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        display: block;
+        color: #eee;
+        padding: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        .navigation a:hover {
+            text-decoration: underline;
+            color: rgb(90, 213, 233);
+        }
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto 1fr auto; /* Header, Nav, Main, Footer */
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+}
+
+/* Layout for Main and Aside */
+main {
+    display: flex;
+    background-color: lightgray;
+    padding: 30px;
+    min-height: 400px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 2;
+    padding: 30px;
+    background-color: #c4c4c4;
+}
+
+/* Aside Content */
+.aside-content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(205, 180, 180);
+    min-height: 300px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
