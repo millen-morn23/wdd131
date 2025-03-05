@@ -1,0 +1,143 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style Header */
+header {
+    background-color: #333;
+    color: white; /* Fixed: Ensuring text is readable */
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Style Navigation */
+nav {
+    background-color: rgb(98, 96, 96);
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+    .navigation li {
+        margin: 0 15px;
+        flex: 1 1 auto;
+    }
+
+    .navigation a {
+        display: block;
+        color: #eee;
+        padding: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+        .navigation a:hover {
+            text-decoration: underline;
+            color: rgb(90, 213, 233);
+        }
+
+/* Layout Structure */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    min-height: 100vh;
+    background-color: #f0f0f0; /* Fixed: Added background to ensure contrast */
+    color: #000; /* Ensuring text is readable */
+}
+
+/* Main and Aside Layout */
+main {
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+    min-height: 400px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 2;
+    padding: 30px;
+    background-color: #c4c4c4;
+    color: #000; /* Fixed: Ensuring text color for contrast */
+    border-bottom: 4px solid #333;
+    display: flex;
+    justify-content: space-between; /* Keeps text and image apart */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Adds space between text and image */
+}
+
+    /* About Me Text */
+    .main-content p {
+        flex: 2;
+        padding-right: 20px;
+    }
+
+/* Text Section (Heading + Paragraph) */
+.text-container {
+    flex: 2;
+    max-width: 70%; /* Adjust width to leave space for image */
+}
+
+    /* About Me Heading */
+    .text-container h2 {
+        margin-bottom: 10px; /* Ensures space between heading and paragraph */
+        color: #000; /* Fixed: Ensuring text is visible */
+    }
+
+    /* About Me Paragraph */
+    .text-container p {
+        padding-right: 20px;
+    }
+
+/* Profile Image */
+.main-content img {
+    flex: 0 0 150px;
+    max-width: 220px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    float: right;
+}
+
+
+/* Vertical Divider */
+.divider {
+    width: 4px; /* Thickness of the divider */
+    background-color: #333; /* Color of the divider */
+    height: auto; /* Make it extend full height */
+    margin: 0 10px; /* Space around the divider */
+}
+
+/* Aside Content */
+.aside-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #c4c4c4;
+    color: #000; /* Fixed: Added text color */
+    min-height: 300px;
+    border-top: 4px solid #333; /* Adds a separation border above */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white; /* Fixed: Ensuring text is readable */
+    text-align: center;
+    padding: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
