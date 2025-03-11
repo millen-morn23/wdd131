@@ -52,6 +52,8 @@ nav ul {
 
         nav ul li:hover {
             background: #357ABD;
+            padding: 10px; 
+            border-radius: 5px; 
         }
 
 .gallery {
