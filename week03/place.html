@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenya Weather</title>
+  <meta name="description" content="Live weather updates for Kenya">
+  <meta name="author" content="Millen Morn">
+  <link rel="stylesheet" href="styles/weather.css">
+  <script defer src="scripts/weather.js" ></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>Kenya</h1>
+  </header>
+
+  <main>
+    <!-- Hero Image -->
+    <div class="hero">
+      <picture>
+        <source srcset="images/kenya-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/kenya-medium.webp" media="(min-width: 500px)">
+        <img src="images/kenya-small.webp" alt="Kenyan Wildlife" width="1000" height="500">
+      </picture>
+
+      <!-- Data & Weather Sections -->
+      <div class="info-container">
+        <section class="data">
+          <h2>Data</h2>
+          <ul>
+            <li><strong>Area:</strong> 587,041 km²</li>
+            <li><strong>Population:</strong> 55 million</li>
+            <li><strong>Capital:</strong> Nairobi</li>
+            <li><strong>Languages:</strong> English, Kiswahili</li>
+            <li><strong>Currency:</strong> Kenyan Shillings (KSh)</li>
+            <li><strong>Time Zone:</strong> EAT+3</li>
+            <li><strong>Calling Code:</strong> +254</li>
+          </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <figure>
+              <img src="images/default.svg" id="weathericon" alt="Weather icon">
+              <figcaption id="weatherdesc">Loading...</figcaption>
+            </figure>
+            <p><strong>Temperature:</strong> <span id="temperature">Loading...</span>°C</p>
+            <p><strong>Condition:</strong> <span id="currently">Loading...</span></p>
+          </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 2025 💯 Dev Millen Morn 💯 Nairobi, Kenya</p>
+    <p id="lastmodified"></p>
+  </footer>
+  <script src="scripts/getdates.js"></script>
+</body>
+
+</html>
