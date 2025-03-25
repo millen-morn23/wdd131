@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a collection of sacred temple images from around the world. Temple Album showcases beautiful temples and their locations.">
+    <meta name="author" content="Millen Morn">
+    <title>Temple Album - A Collection of Sacred Temples</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-templelarge.css">
+    <script defer src="scripts/filtered-temple.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu-btn">&#9776;</button> <!-- Hamburger Menu -->
+        <nav>
+            <ul id="menu">
+                <li><a href="#" data-filter="all">All</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Nyumbani Kwa Baba - Temple Album</h1>
+        <h2>Beautiful Temples Around the World</h2>
+        <div class="gallery"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 2025 💯 Dev Millen Morn 💯 Nairobi, Kenya</p>
+        <p id="lastmodified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
