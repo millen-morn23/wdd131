@@ -1,0 +1,92 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    background-color: #3b003b;
+    color: white;
+    padding: 15px;
+    margin: -20px -20px 20px -20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+/* Form Elements */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Ratings */
+.rating {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 5px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.rating input:checked ~ label {
+    color: gold;
+}
+
+/* Checkboxes */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.features label {
+    cursor: pointer;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #3b003b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a005a;
+}
+
+/* Footer */
+footer {
+    font-size: 12px;
+    color: #3b003b;
+    margin-top: 10px;
+}
