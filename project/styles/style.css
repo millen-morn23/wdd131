@@ -1,0 +1,347 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a { /* Targeting the anchor tags within the list items */
+  color: inherit;  /* Inherit color from the parent element */
+  transition: color 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+  text-decoration: none;  /* Remove underline by default */
+}
+
+nav ul li a:hover {
+  color: #3a3f58;  /* Changed hover color */
+  text-decoration: underline;
+  transform: scale(1.1);  /* Slightly enlarged the item on hover */
+  padding-bottom: 5px;  /* Added a small space when hovering for better effect */
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin: 4px 0;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://dorchesterinnke.com/wp-content/uploads/2025/02/image-22-1024x585.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: #3a3f58;
+  padding: 100px 20px 60px;
+  text-align: center;
+  height: 400px;  /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero button {
+  background-color: #fff;
+  color: #3a3f58;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #1e293b;
+  color: white;
+}
+
+/* Intro Section */
+.intro {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1rem;
+  color: #444;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background-color: #3a3f58;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.card-content a {
+  color: #007BFF;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.card-content a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.cta a {
+  background-color: #1e293b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta a:hover {
+  background-color: #334155;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 3rem auto 0 auto; /* Adds top margin */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #0b6e4f;
+  box-shadow: 0 0 4px rgba(11, 110, 79, 0.3);
+}
+
+.contact-form .btn {
+  margin-top: 1.5rem;
+  background-color: #0b6e4f;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.contact-form .btn:hover {
+  background-color: #095c3f;
+}
+
+.confirmation {
+  background-color: #e0ffe0;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #1c9c1c;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+/* Contact Info Styling */
+.contact-info {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: #0b6e4f;
+  margin-bottom: 0.5rem;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+
+
+/* Footer */
+footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;  /* Distribute space between the content */
+  align-items: center;  /* Vertically center the items */
+}
+
+footer .footer-links,
+footer .socials {
+  display: flex;
+  gap: 20px;
+}
+
+footer a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #007BFF;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;  /* Align horizontally */
+  gap: 20px;  /* Space between the icons */
+  margin-top: 10px;
+}
+
+.socials img {
+  width: 30px;  /* Adjust the width */
+  height: 30px;  /* Adjust the height to keep them square */
+  transition: filter 0.3s;  /* Optional: to add hover effects */
+}
+
+.socials a:hover img {
+  filter: brightness(1.2);  /* Optional: brighten the icon on hover */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    width: 150px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
